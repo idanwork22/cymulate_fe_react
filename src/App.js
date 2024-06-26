@@ -17,8 +17,8 @@ const theme = createTheme({
 });
 
 // Use environment variables for API base URL
-const API_BASE_URL = `http://${process.env.REACT_APP_API_HOST || 'localhost'}:${process.env.REACT_APP_API_PORT || '5001'}`;
-
+const API_BASE_URL = `http://${process.env.REACT_APP_API_HOST || 'localhost'}:${'3005' || '5001'}`;
+console.log(API_BASE_URL)
 const App = () => {
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(false);
